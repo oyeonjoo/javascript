@@ -29,4 +29,19 @@ d *= 2
 console.log(d)
 
 console.log()
-console.log('2' > 1, '01' == 1) // ==: 같다 연산자
+console.log('2' > 1, '01' == 1, false == 0, '' == false) // ==: 같다 연산자
+console.log(true > 1)
+
+// equivalent operator
+console.log(1 == '1', 1 != '1')
+
+// identical operator 타입이 같아야 한다
+console.log(1 === '1', 1 !== '1')
+
+console.log('z' > 'a', 'ac' > 'ab', 'bee' > 'be', 'a' > 'A') // ac, ab: 원소가 두개인 배열로 처리한다
+
+console.log(null > 0, null < 0, null >= 0, null == 0)
+console.log(undefined > 0, undefined >= 0, undefined == 0)
+console.log(NaN > 0, NaN >= 0, NaN == 0)
+
+console.log(undefined == undefined, null == null, NaN == NaN)
