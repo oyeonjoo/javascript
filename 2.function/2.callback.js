@@ -23,3 +23,20 @@ function sayEven2(num) {
 }
 
 lookNum(sayOdd2, sayEven2)
+
+//
+let chef1 = function(food) {
+    return `달콤한 ${food}.\n`
+}
+
+let chef2 = function(food) {
+    return `매운 ${food}.\n`
+}
+
+let waiter = function(food, chef) {
+    return chef(food)
+}
+
+console.log(waiter('짜장면', chef1),
+            waiter('짜장면', chef2),
+            waiter('짬뽕', chef2))
