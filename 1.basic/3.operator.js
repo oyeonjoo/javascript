@@ -32,7 +32,7 @@ console.log()
 console.log('2' > 1, '01' == 1, false == 0, '' == false) // ==: 같다 연산자
 console.log(true > 1)
 
-// equivalent operator
+// equivalent operator 자동으로 casting
 console.log(1 == '1', 1 != '1')
 
 // identical operator 타입이 같아야 한다

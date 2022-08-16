@@ -33,8 +33,8 @@ showName('erica', 'terry')
 
 console.log(Math.max(1, 2, 3)) // max 메소드: n개의 파라미터중에 최고값을 찾아서 return해준다
 
-// rest: 흩어져 있는 파라미터를 한 곳에 모으는 것
-// spread: 모아져 있는 파라미터를 퍼트리는 것, 배열객체를 만들 때 쓸 수 있다.
+// rest: 흩어져 있는 파라미터를 한 곳에 모으는 것(전제는 배열)
+// spread: 모아져 있는 파라미터를 퍼트리는 것, *배열객체* 를 만들 때 쓸 수 있다.
 
 let arr = [1, 2, 3]
 console.log(Math.max(arr))
