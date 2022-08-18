@@ -13,4 +13,8 @@ for(let i = 0; i < 2; i++)
     console.log(counter1())
 
 for(let i = 0; i < 2; i++)
-    console.log(counter2)
+    console.log(counter2())
+
+/*
+global 객체 생성 > 
+*/

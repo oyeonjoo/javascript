@@ -10,7 +10,7 @@ makeUser = function(name, age) {
         name,
         age
     }
-} // 위의 코드에서 중복된 코드를 제거한 것이다.
+} // 1~6 의 코드에서 중복된 코드를 제거한 것이다.
 
 console.log(makeUser('doris', 57))
 
@@ -20,7 +20,7 @@ function User(name) {  // 생성자 fn이다
     this.name = name
     this.greet = () => console.log(`I am ${this.name}.`)
     return this // 직접쓰지 않아도 알아서 추가된다. 직접써도 된다.
-} // 생성자 fn안에서만 this를 사용 가능하다.
+} // 생성자 fn안에서만 this를 사용 가능하다. this객체는 아무것도 들어있지않은 깨끗한 상태이다.
 
 // const user1 = User('bob') // 위 함수에서 return, 출력하는 것이 없기 때문에 아무것도 없다
 let user1 = User('bob') // undefined

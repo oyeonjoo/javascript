@@ -1,4 +1,4 @@
-let id = Symbol() // description 값을 주지 않았다
+let id = Symbol() // description 값을 주지 않았다(description = parameter)
 let id1 = Symbol('id')
 let id2 = Symbol('id')
 

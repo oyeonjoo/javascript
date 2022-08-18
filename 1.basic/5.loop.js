@@ -1,6 +1,6 @@
 let i = 0
 while(i < 2) {
-    console.log(`while: ${i + 10}`) // 값의 데이터 타입은 string
+    console.log(`while: ${i + 10}`) // `${}` 값의 데이터 타입은 string
     i++
 }
 

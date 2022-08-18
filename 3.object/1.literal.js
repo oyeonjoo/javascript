@@ -36,7 +36,7 @@ console.log(user[key])
 
 let man = {
     name: 'samuel',
-    1: 'one',
+    1: 'one', // 1은 string이다
     2: 'two'
 }
 
