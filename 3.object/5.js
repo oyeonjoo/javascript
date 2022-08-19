@@ -1,12 +1,12 @@
 function sayHi(myName, ...jobs) {
-    console.log(`Hi, I am ${myName}.`)
-} // fn = 객체
+    console.log(`Hi, I an ${myName}.`)
+}
 
 sayHi('john')
 
 console.log(typeof sayHi)
-console.log(sayHi.name) // sayHi 객체의 name
-console.log(sayHi.length) // rest 파라미터는 제하고 length를 구한다
+console.log(sayHi.name)
+console.log(sayHi.length)
 
 //
 let user = {
@@ -19,9 +19,9 @@ console.log(user.sayBye.name)
 
 //
 sayHi = function() {
-    let count = 100 // count는 블럭안의 지역변수이다, fn의 속성은 아니다, sayHi에 count는 없다
+    let count = 100
     console.log('hi')
-    console.log(sayHi.count++) // NaN
+    console.log(sayHi.count++)
 }
 
 sayHi()

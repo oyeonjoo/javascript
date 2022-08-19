@@ -28,9 +28,7 @@ let one = new Number(1)
 console.log(one) // Number(1)
 
 //
-function User() {
-
-}
-
+function User() {}
 let user = new User()
-console.log(user)
+console.log(user.toString()) // [object Object]
+console.log(obj.toString()) // [object Object]
