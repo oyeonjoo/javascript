@@ -23,8 +23,8 @@ function User(name) {  // 생성자 fn이다
 } // 생성자 fn안에서만 this를 사용 가능하다. this객체는 아무것도 들어있지않은 깨끗한 상태이다.
 
 // const user1 = User('bob') // 위 함수에서 return, 출력하는 것이 없기 때문에 아무것도 없다
-let user1 = User('bob') // undefined
-user1 = new User('bob') // new를 붙여야 한다, User {name: undefined, greet: ƒ}
+let user1 = User('bob') // undefined, new가 없으면 일반 > 생성자가 아니라서 this명령문이 없기 때문에 error
+user1 = new User('bob') // new를 붙여야 한다, User {name: undefined, greet: ƒ}, 생성자로 작동한다
 console.log(user1)
 
 user1.greet()
@@ -62,11 +62,11 @@ console.log(new BigUser().name, new SmallUser().name)
 
 // console.log(BigUser().name, SmallUser().name) // SmallUser는 return값이 정해져있지 않아서 error
 // 과제: new를 하지 않고, 앱이 살도록 위 코드를 수정하라.
-console.log(BigUser().name, SmallUser()?.name)
+console.log(BigUser().name, SmallUser()?.name) // SmallUser는 return값이 정해져있지 않아서 error
 
 //
-const user = new Object()
-console.log(user) // 깨끗한 객체, user객체에 entry를 추가할 수 있다
+const user = new Object() // 기본 property만 가진 깨끗한 객체
+console.log(user) // user객체에 entry를 추가할 수 있다
 user.age = 12
 
 //

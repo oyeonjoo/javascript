@@ -15,7 +15,7 @@ console.log(`${user}`) // `${}`는 string type이다
 
 let user2 = {
     age: 38,
-    [Symbol.toPrimitive]() {
+    [Symbol.toPrimitive]() { // ()는 hint 값에 default
         return this.age
     }
 }
@@ -23,7 +23,7 @@ let user2 = {
 
 console.log(`${user}`)
 console.log(user > user2)
-console.log(user + 50)
+console.log(user + 50) // toPrimitive는 + 연산자가 오면 default값으로 설정된다
 console.log(user2 + 50)
 
 //
@@ -47,3 +47,8 @@ console.log(user + 100) // valueOf가 user를 number로 바꿔준다
 userStr = JSON.stringify(user) // 객체가 아니다, 객체를 주고 받을 때 JSON.stringify를 사용해서 문자로 바뀐다
 console.log(userStr) 
 console.log(typeof userStr)
+
+// serializing 객체를 기본타입으로 바꾸는 작업
+// deserializing 파싱한다.
+
+// 한 객체 안에 전부 있으면, Symbol.toPrimitive를 제일 먼저 사용, toString > valueOf 사용

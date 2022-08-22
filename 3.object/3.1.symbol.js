@@ -1,5 +1,5 @@
 let id = Symbol() // description 값을 주지 않았다(description = parameter)
-let id1 = Symbol('id')
+let id1 = Symbol('id') // symbol에 대한 설명, description
 let id2 = Symbol('id')
 
 console.log(id, id1, id2)
@@ -15,7 +15,7 @@ let user = {
     name: 'neo' // string type
 }
 
-let userId = Symbol('uerId')
+let userId = Symbol('uerId') // symbol을 property로 쓰려면 ''를 붙여야 한다
 user.userId = 1  // userId property 추가
 user[userId] = 2 // symbol type
 
@@ -30,9 +30,9 @@ console.log(Object.keys(user))
 // global symbol registry
 id1 = Symbol.for('id')
 id2 = Symbol.for('id')
-console.log(id1 == id2)
+console.log(id1 == id2) // 같은 symbol이다
 
-let key = Symbol.keyFor(id1)
+let key = Symbol.keyFor(id1) // keyFor: symbol의 key값을 알고싶을 때 사용한다
 console.log(key, typeof key)
 
 //

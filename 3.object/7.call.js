@@ -24,7 +24,7 @@ function greet() { // 메소드가 아니다
 
 greet()
 
-greet.call(user1)
+greet.call(user1) // 주어로 나온 fn 을 call
 greet.call(user2) // call 메소드로 this변수를 고를 수 있다
 
 //

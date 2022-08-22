@@ -1,11 +1,11 @@
-function sayHi(myName, ...jobs) {
+function sayHi(myName, ...jobs) { 
     console.log(`Hi, I am ${myName}.`)
 } // fn = 객체
 
 sayHi('john')
 
 console.log(typeof sayHi)
-console.log(sayHi.name) // sayHi 객체의 name
+console.log(sayHi.name) // 객체.속성, sayHi 객체의 name
 console.log(sayHi.length) // rest 파라미터는 제하고 length를 구한다
 
 //
@@ -27,7 +27,7 @@ sayHi = function() {
 sayHi()
 console.log(`call count: ${sayHi.count}`)
 
-sayHi.count = 0
+sayHi.count = 0 // sayHi에 count 속성 추가
 sayHi()
 sayHi()
 console.log(`call count: ${sayHi.count}`)

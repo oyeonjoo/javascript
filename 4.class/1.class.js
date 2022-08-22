@@ -12,13 +12,16 @@ let user = new User('john') // User는 생성자이다, 위 코드와 동일하�
 console.log(user.name)
 user.introduce()
 
+// [[isClassConstructor]]: true
+// User('john') Type Error: class constructor User cannot be invoked without 'new'
+
 //
 User = class {
-    name
+    name //class field
     age
 
     constructor(name, age) {
-        this.name = name // 17번째 줄의 name이다
+        this.name = name // 20번째 줄의 name이다
         this.age = age
     }
 
@@ -27,7 +30,10 @@ User = class {
     }
 }
 
-new User('abel', 12).introduce()
+user = new User('abel', 12)
+user.introduce() // abel/12
+console.log(user.name) // abel
+console.log(User.prototype.name) // undefined
 
 //
 function makeClass(phrase) {
@@ -36,7 +42,7 @@ function makeClass(phrase) {
             console.log(phrase)
         }
     }
-}
+} // class 는 값이다. 값이 되는 class를 return한다
 
 User = makeClass('hello')
 new User().sayHi()

@@ -43,7 +43,7 @@ function Mom() {
 }
 
 function Child() {
-    this.eat = food => console.log(food)
+    this.eat = food => console.log(food) // return값은 없다. console은 테스트 목적으로 쓴 것이다
 }
 
 const mom = new Mom()

@@ -1,6 +1,6 @@
 let user = {
     name: 'frances', // entry
-    age: 70
+    age: 70 // string type이거나 symbol type이거나
 }
 // key, value로 표현(각 각 하나를 entry라고 한다 ','로 구분한다)
 
@@ -15,7 +15,7 @@ user = {
     sing: () => console.log('lala')
 } // 4개의 속성을 가지고 있다
 
-console.log(user.name) // name 뒤의 value를 읽는다
+console.log(user.name) // name 뒤의 value를 읽는다, 객체명.propertyname
 console.log(user.name.first) // first 뒤의 value를 읽는다
 // console에 lala가 출력되도록하라.
 user.sing()
@@ -25,18 +25,18 @@ user.sing()
 console.log(user['nick name'])
 console.log(user['name']['first'])
 
-user.name.first = 'john'
+user.name.first = 'john' // 할당연산자 사용
 user['age'] = 50
 console.log(user.name.first, user.age)
 
 let key = 'nick name'
-console.log(user[key]) // ()안에 변수를 넣어서 활용할 수 있다
+console.log(user[key]) // ()안에 변수를 넣어서 활용할 수 있다, soft coding 가능
 key = 'age'
 console.log(user[key])
 
 let man = {
     name: 'samuel',
-    1: 'one', // 1은 string이다
+    1: 'one', // 1은 string이다(모양만 숫자이다)
     2: 'two'
 }
 

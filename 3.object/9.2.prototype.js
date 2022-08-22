@@ -30,5 +30,5 @@ console.log(one) // Number(1)
 //
 function User() {}
 let user = new User()
-console.log(user.toString()) // [object Object]
+console.log(user.toString()) // [object Object], user prototype에 없어서 Object prototype을 사용한다
 console.log(obj.toString()) // [object Object]

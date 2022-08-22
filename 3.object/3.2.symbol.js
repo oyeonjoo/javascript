@@ -10,7 +10,7 @@ function src() {
 }
 
 function a(user) {
-    user[Symbol('age')] = 12
+    user[Symbol('age')] = 12 // user 객체에 symbol age추가
     console.log(user)
 }
 
