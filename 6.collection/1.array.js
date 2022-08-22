@@ -88,5 +88,6 @@ for(let i = 0; i < arr.length; i++)
     console.log(arr[i])
 
 // 과제: 원소를 출력하라
-for(let key in arr) console.log(key) // e: element, 원소와 index의 key를 읽어들인다
-console.log(values.arr)
+for(let key in arr) console.log(arr[key])
+
+for(let val of arr) console.log(val) // value로 직접 접근한다
