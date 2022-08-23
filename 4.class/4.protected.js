@@ -43,7 +43,7 @@ console.log(CoffeeMachine.prototype) // {constructor: ƒ, waterAmount: <accessor
 machine = new CoffeeMachine()
 console.log(machine) // CoffeeMachine {_waterAmount: undefined, voltage: undefined}
 
-machine.waterAmount = 1
+machine.waterAmount = 1 // 쓰기는 setter 읽기는 getter사용
 console.log(machine) // CoffeeMachine {_waterAmount: 2, voltage: undefined} > waterAmount는 setter를 이용한다
 console.log(machine.waterAmount) // 102
 

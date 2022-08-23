@@ -7,7 +7,7 @@ class Article {
     }
 
     static compare(article1, article2) {
-        return article1 - article2
+        return article1 - article2 // 오름차순
     }
 
     toString() {
@@ -62,6 +62,6 @@ console.log(articles)
 articles.sort(Article.compare) // sort: 원소를 검열한다
 console.log(articles)
 
-Article.compare = (a, b) => b - a
+Article.compare = (a, b) => b - a // 내림차순
 articles.sort(Article.compare)
 console.log(articles) // 숫자로 바뀐다 > article2, 1 순으로 내림차순 정렬(100, 10)

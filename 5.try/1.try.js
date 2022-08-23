@@ -14,6 +14,6 @@ try {
 
 try {
     JSON.parse(json)
-} catch(e) { // error 객체가 담긴다(객체를 만든 것이 아니고, error가 생기는 상황을 만든 것이다)
+} catch(e) { // try에서 만들어진 error 객체가 담긴다(객체를 만든 것이 아니고, error가 생기는 상황을 만든 것이다)
     console.log(e.name, '\n', e.message, '\n', e.stack) // stack은 밑에서부터 출력한다
 } 

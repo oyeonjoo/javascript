@@ -7,7 +7,7 @@ try {
     // user && console.log(user.age)
 
     if(user.name) console.log(user.name) // user.name이 있으면 user.name을 출력
-    else throw new SyntaxError('user.name이 없습니다.') // error객체, error가 발생하면 catch 블럭으로 넘어간다
+    else throw new SyntaxError('user.name이 없습니다.') // error객체, throw error를 발생시킨다, error가 발생하면 catch 블럭으로 넘어간다
 } catch(e) {
     if(e instanceof SyntaxError)
         console.log('ERROR: ' + e.message)

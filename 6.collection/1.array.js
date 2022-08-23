@@ -18,7 +18,7 @@ console.log(arr.length)
 let matrix = [
     [1, 2],
     [3, 4]
-]
+] // 배열을 원소로 가진 배열, 통일되어야 matrix이다
 
 //
 let a = [1, 2]
@@ -91,3 +91,62 @@ for(let i = 0; i < arr.length; i++)
 for(let key in arr) console.log(arr[key])
 
 for(let val of arr) console.log(val) // value로 직접 접근한다
+
+//
+function print(e) {
+    console.log(e)
+}
+
+function print2(e, i) {
+    console.log(`[${i}]: ${e}`)
+}
+
+function print3(e, i, arr) {
+    arr[i] = e.toUpperCase()
+}
+
+arr = ['a', 'b']
+
+arr.forEach(print) // callback
+
+arr.forEach(print2) // callback
+console.log(arr) // parameter 2개 > index 와 element
+
+arr.forEach(print3) // callback
+console.log(arr) //index element arr
+
+//
+arr = [1, 2, 3]
+let arr2 = arr.map(e => e * 2) // ()안의 값을 가진 새로운 배열을 return
+console.log(arr, arr2)
+
+//
+let group = { // group은 name space
+    title: 'art', // name space 의 속성들
+    students: ['winston', 'cal', 'maritha'],
+    list() {
+        this.students.forEach(studentName =>
+        console.log(this.title, ':', studentName))
+    }
+}
+
+group.list()
+
+//
+arr = ['hello', 'world', 2]
+let greeting = arr.join()
+console.log(greeting) // 각각의 원소를 붙여서, ','로 구별한다, 하나 하나를 token이라고 한다
+console.log(typeof greeting)
+
+console.log(arr.join('/'))
+// 과제: join()에서 'helloworld2'를 return 하라.
+console.log(arr.join(''))
+
+//
+arr = [1, 2, 3]
+str = arr.toString()
+console.log(str, '/', typeof str)
+
+//
+str = JSON.stringify(arr)
+console.log(str, '/', typeof str)

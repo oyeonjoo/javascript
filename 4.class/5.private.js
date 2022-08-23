@@ -21,5 +21,5 @@ machine.waterAmount = 1
 console.log(machine.waterAmount) // 102, get 사용
 // 21번째 줄까지는 protected와 비슷하다
 
-// machine.#waterAmount = 1  > SyntaxError: 문법 error
+// machine.#waterAmount = 1  > SyntaxError: 문법 error, #는 직접 접근불가 > getter setter 가 강제된다
 // 객체의 속성에서 감추고 access하려면 private을 쓴다

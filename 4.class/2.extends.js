@@ -24,7 +24,7 @@ animal.stop() // 12번째줄 실행 > speed = 0, Animal {name: 'animal', speed: 
 console.log(animal)
 
 //
-class Rabbit extends Animal{ // extends 상속, 부모의 prototype을 참조한다
+class Rabbit extends Animal { // extends 상속, 부모의 prototype을 참조한다
     /*
     constructor(...args) {
         super(...args)
@@ -48,8 +48,8 @@ rabbit.hide() // rabbit의 hide
 //
 Rabbit = class extends Animal {
     constructor(name, color) {
-        super(name) // animal에게, super 생성자호출
-        this.color = color // rabbit이
+        super(name) // animal에게(부모), super 생성자호출
+        this.color = color // rabbit이(자신)
     }
 
     stop() {
