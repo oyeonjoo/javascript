@@ -19,7 +19,7 @@ let range = {
     }
 }
 
-for(let num of range) //for-of: iterator 색출, 반복 > [Symbol.iterator] 실행 > next()로 객체 return
+for(let num of range) // for-of: iterator 색출, 반복 > [Symbol.iterator] 실행 > next()로 객체 return
     console.log(num)
 
 //
@@ -37,7 +37,7 @@ console.log(g, typeof g) // generator {[[GeneratorState]]: 'suspended'} object, 
 //
 function* gen() {
     yield* generator()
-    yield* ['a', 'b'] // yeild*: 객체 return
+    yield* ['a', 'b'] // yield*: 객체 return
     yield 9
 }
 

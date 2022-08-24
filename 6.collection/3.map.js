@@ -1,6 +1,6 @@
 let map = new Map()
 
-map.set('1', 'hello') // key, value(key를 일일이 지정하려면 value사용, 자도으로 하려면 arr사용)
+map.set('1', 'hello') // key, value(key를 일일이 지정하려면 value사용, 자동으로 하려면 arr사용)
 map.set(1, {name: 'david'})
 map.set(true, function(){})
 

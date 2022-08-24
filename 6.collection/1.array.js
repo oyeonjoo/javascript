@@ -121,8 +121,8 @@ let arr2 = arr.map(e => e * 2) // ()안의 값을 가진 새로운 배열을 ret
 console.log(arr, arr2)
 
 //
-let group = { // group은 name space
-    title: 'art', // name space 의 속성들
+let group = { // group은 name space이다
+    title: 'art', // name space 의 속성들이다
     students: ['winston', 'cal', 'maritha'],
     list() {
         this.students.forEach(studentName =>

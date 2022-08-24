@@ -12,18 +12,18 @@ console.log(date.toLocaleTimeString()) //오후 4:27:30
 
 console.log(
     date.getFullYear(), // 2022
-    date.getMonth(), // 7 (0 ~ 11)
+    date.getMonth(), // 7 (0 부터 시작 ~ 11)
     date.getDate(), // 23
     date.getUTCHours(), // 7
     date.getHours(), // 16
     date.getMinutes(), // 27
     date.getSeconds(), // 30
     date.getMilliseconds(), // 999
-    date.getDay() // 2 (0 ~ 6, 일 ~ 토)
+    date.getDay() // 2 (0 부터 시작 ~ 6, 일 ~ 토)
 )
 
-console.log(date.getTime()) // 1661239650999
-console.log(Date.now()) // 1661240976117
+console.log(date.getTime()) // 1661239650999 ms (long type)
+console.log(Date.now()) // 1661240976117 ms
 
 date = new Date(0) // time stamp, 1970. 1. 1, 기준시간
 console.log(date)
