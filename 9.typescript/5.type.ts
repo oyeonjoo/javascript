@@ -1,4 +1,4 @@
-type Man = {
+type Man = { // type은 할당연산자를 쓴다
     name: string
 }
 
@@ -17,7 +17,7 @@ let color: Color = 'red'
 // color = 'yellow' 인터페이스는 오브젝트를 대상으로 쓰는 것, type은 지정된 것 외에 사용 안된다
 
 //
-type Employee = Man & {
+type Employee = Man & { // merge는 &를 사용한다
     job: string
 }
 

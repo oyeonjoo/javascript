@@ -5,12 +5,12 @@ async function f() { // new Promise 대신 사용
 f().then(console.log) // 1, f().then(console.log) = promise.then(console.log) 이다
 
 f = async function() {
-    return Promise.resolve(2)
+    return Promise.resolve(2) // result가 2가 들어간 프로미스 값을 리턴
 }
 f().then(console.log) // 2 
 
 f = async function() {
-    return Promise.reject(new Error(3))
+    return Promise.reject(new Error(3)) // result가 3이 들어간 프로미스 값을 리턴
 }
 f().catch(e => console.log(e.message)) // 3
 

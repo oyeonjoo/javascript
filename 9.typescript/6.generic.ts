@@ -43,12 +43,12 @@ const placeItem: Item<Place> = {
 }
 
 //
-type Product<T> = {
+type Product<T> = { // type 에서도 제네릭을 쓸 수 있다
     id: number
     data: T
 }
 
-class Queue<T> { // class 에서도 제네릭을 쓴다
+class Queue<T> { // class 에서도 제네릭을 쓸 수 있다
     list: T[] = []// T타입의 배열, [] 기본 값을 가지고 있어서 undefined가 아니다
 
     get length() {

@@ -1,7 +1,7 @@
 interface Profile {
     id: number
     username: string // key, value, type
-    nickname: string // , 는 쓰지 않는다
+    nickname: string // ',' 는 쓰지 않는다
 } // 나만의 타입을 만들고 싶을 때 인터페이스를 사용한다
 
 function printUsername(profile: Profile) {
@@ -9,7 +9,7 @@ function printUsername(profile: Profile) {
 }
 
 const profile: Profile = {
-    id: 1, // 객체라서 ,를 쓴다
+    id: 1, // 객체라서 ','를 쓴다, 객체는 Profile type이다
     username: 'cain',
     nickname: 'hero'
 }
@@ -87,7 +87,7 @@ class Circle implements Shape {
     getPerimeter(): number {
         return 2 * Math.PI * this.radius // 원의 둘레
     }
-}
+} // 인터페이스를 상속하면 메소드를 오버라이드 해야 클래스가 완성된다
 
 class Rectangle implements Shape {
     constructor(private width: number, private height: number) {}

@@ -21,5 +21,5 @@ function greet(name: string, nullable?: boolean): string | null { // ? : optiona
 }
 
 let greeting = greet('cain')
-greeting = greet('cain', true)
+//greeting = greet('cain', true)
 console.log(greeting)
